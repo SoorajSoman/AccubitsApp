@@ -3,9 +3,12 @@ package com.project.sooraj.accubitsapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -35,10 +38,16 @@ public class LoginActivity extends AppCompatActivity {
 
                     return;
                 }else{
+                   if(FirebaseAuth.getInstance().getCurrentUser()==null){
+                       Log.d("TAG",""+FirebaseAuth.getInstance().getCurrentUser());
 
                 Intent intent = new Intent(LoginActivity.this, VerifyPhoneActivity.class);
                 intent.putExtra("mobile", mobile);
-                startActivity(intent);
+                startActivity(intent);}else{
+
+                       Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                       startActivity(intent);
+                   }
                 }
             }
         });
