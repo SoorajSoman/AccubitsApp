@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "658784688719",
+    "firebase_url": "https://accubitsapp.firebaseio.com",
+    "project_id": "accubitsapp",
+    "storage_bucket": "accubitsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658784688719:android:7c82cb0e8390c484",
+        "android_client_info": {
+          "package_name": "com.project.sooraj.accubitsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658784688719-433ou8ahea1orabqtjc5olfcb4ue0174.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.sooraj.accubitsapp",
+            "certificate_hash": "84bf0e5a60564f7a0db2e5baa992d80e432a74ad"
+          }
+        },
+        {
+          "client_id": "658784688719-c7ugj18drvl4kfbmjka1pgo5bodgjas0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3k2FiqA30v5VySjGLxiZaM6Zk27ynmU4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658784688719-c7ugj18drvl4kfbmjka1pgo5bodgjas0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
