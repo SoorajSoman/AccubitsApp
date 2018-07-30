@@ -57,6 +57,15 @@ public class DataRecyclerAdapter extends RecyclerView.Adapter<DataRecyclerAdapte
         } else
             holder.description.setText("Lorem Ipsum");
 
+        if (!checkNull(datum.getGame())) {
+            holder.date.setText(datum.getDate());
+        } else
+            holder.date.setText("Lorem Ipsum");
+        if (!checkNull(datum.getGame())) {
+            holder.location.setText(datum.getVenue());
+        } else
+            holder.location.setText("Lorem Ipsum");
+
 
     }
 
@@ -76,13 +85,15 @@ public class DataRecyclerAdapter extends RecyclerView.Adapter<DataRecyclerAdapte
 
     public static class ProfileViewHolder extends RecyclerView.ViewHolder {
         ImageView profile, largeImage;
-        TextView description, name;
+        TextView description, name,date,location;
         LinearLayout divSection;
 
         public ProfileViewHolder(View itemView) {
             super(itemView);
             description = (TextView) itemView.findViewById(R.id.description);
-            name = (TextView) itemView.findViewById(R.id.username);
+            name = (TextView) itemView.findViewById(R.id.name);
+            date = (TextView) itemView.findViewById(R.id.date);
+            location = (TextView) itemView.findViewById(R.id.location);
 
 
         }
